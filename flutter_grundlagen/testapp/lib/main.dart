@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:testapp/presentation/widgets/widgets_example_page.dart';
+import 'package:testapp/presentation/pages/widgets_example_page.dart';
 
 void main() {
   runApp(const MyApp());
