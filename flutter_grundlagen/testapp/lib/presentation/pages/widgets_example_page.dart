@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:testapp/presentation/widgets/container.text.dart';
+import 'package:testapp/presentation/widgets/profile_image.dart';
 import 'package:testapp/presentation/widgets/row_expanded.dart';
 
 class WidgetsExamplePage extends StatelessWidget {
@@ -18,7 +19,8 @@ class WidgetsExamplePage extends StatelessWidget {
         centerTitle: true,
         title: const Text("Test App"),
       ),
-      body: const Center(
+      body: const SingleChildScrollView(
+        physics: BouncingScrollPhysics(),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -31,6 +33,10 @@ class WidgetsExamplePage extends StatelessWidget {
               height: 20,
             ),
             RowExpanded(),
+            SizedBox(
+              height: 20,
+            ),
+            ProfilePicture(),
             SizedBox(
               height: 20,
             ),
