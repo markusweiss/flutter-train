@@ -45,6 +45,16 @@ class WidgetsExamplePage extends StatelessWidget {
           ],
         ),
       ),
+      bottomNavigationBar: BottomNavigationBar(
+          unselectedItemColor: Colors.white,
+          selectedItemColor: Colors.grey[400],
+          backgroundColor: Colors.grey[900],
+          items: const [
+            BottomNavigationBarItem(icon: Icon(Icons.star), label: "Page 1"),
+            BottomNavigationBarItem(icon: Icon(Icons.add), label: "Page 2"),
+            BottomNavigationBarItem(
+                icon: Icon(Icons.color_lens), label: "Page 3"),
+          ]),
     );
   }
 }
